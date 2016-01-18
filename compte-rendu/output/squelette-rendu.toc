@@ -1,0 +1,25 @@
+\select@language {french}
+\select@language {english}
+\select@language {french}
+\contentsline {section}{\numberline {1}Pr\'esentation sommaire du programme \`a \'evaluer}{2}
+\contentsline {subsection}{\numberline {1.1}Donn\'ees \`a fournir en entr\'ee}{2}
+\contentsline {subsection}{\numberline {1.2}Donn\'ees fournies en sortie}{2}
+\contentsline {subsection}{\numberline {1.3}Algorithme}{2}
+\select@language {english}
+\select@language {french}
+\contentsline {section}{\numberline {2}Premi\`eres mesures du temps d'ex\'ecution}{2}
+\contentsline {subsection}{\numberline {2.1}Param\`etres utilis\'es dans toute cette section}{2}
+\contentsline {subsection}{\numberline {2.2}Mise en \'evidence de la stochasticit\'e de l'algorithme}{2}
+\contentsline {subsection}{\numberline {2.3}Influence de la charge syst\`eme}{2}
+\contentsline {subsection}{\numberline {2.4}Influence des options de compilation}{3}
+\contentsline {section}{\numberline {3}Op\'eration dominante}{3}
+\contentsline {subsection}{\numberline {3.1}Param\`etres utilis\'es dans toute cette section}{3}
+\contentsline {subsection}{\numberline {3.2}Identification de l'op\'eration dominante}{3}
+\contentsline {subsection}{\numberline {3.3}Comptage des appels \`a l'op\'eration dominante}{3}
+\contentsline {section}{\numberline {4}Analyse de l'exp\'erience fournie par R. Thion}{3}
+\contentsline {subsection}{\numberline {4.1}Plan d'exp\'erience}{3}
+\contentsline {subsection}{\numberline {4.2}Analyse des r\'esultats}{4}
+\contentsline {section}{\numberline {5}Conception et r\'ealisation de votre exp\'erience}{4}
+\contentsline {subsection}{\numberline {5.1}Plan d'exp\'erience}{4}
+\contentsline {subsection}{\numberline {5.2}Analyse des r\'esultats}{4}
+\contentsline {section}{\numberline {6}Annexe : Code r\'ealis\'e pour le tutoriel sur les tests d'hypoth\`ese}{4}
