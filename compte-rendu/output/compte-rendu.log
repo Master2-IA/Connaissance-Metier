@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.14)  18 JAN 2016 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.14)  21 JAN 2016 22:13
 entering extended mode
 **compte-rendu.tex
 (compte-rendu.tex
@@ -669,6 +669,34 @@ Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
 \c@IncludeDepth=\count125
 )
 ("F:\MiKTeX 2.9\tex\latex\frankenstein\tag.sto")
+("F:\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen129
+\lightrulewidth=\dimen130
+\cmidrulewidth=\dimen131
+\belowrulesep=\dimen132
+\belowbottomsep=\dimen133
+\aboverulesep=\dimen134
+\abovetopsep=\dimen135
+\cmidrulesep=\dimen136
+\cmidrulekern=\dimen137
+\defaultaddspace=\dimen138
+\@cmidla=\count126
+\@cmidlb=\count127
+\@aboverulesep=\dimen139
+\@belowrulesep=\dimen140
+\@thisruleclass=\count128
+\@lastruleclass=\count129
+\@thisrulewidth=\dimen141
+)
+("F:\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count130
+\rotFPtop=\skip55
+\rotFPbot=\skip56
+\rot@float@box=\box32
+\rot@mess@toks=\toks30
+)
 ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -678,26 +706,32 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("F:\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-(A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 54.
-LaTeX Font Info:    Try loading font information for OT2+cmr on input line 54.
+(A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux
 
-("F:\MiKTeX 2.9\tex\latex\base\ot2cmr.fd"
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 55.
+LaTeX Font Info:    Try loading font information for OT2+cmr on input line 55.
+ ("F:\MiKTeX 2.9\tex\latex\base\ot2cmr.fd"
 File: ot2cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    ... okay on input line 55.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -733,56 +767,55 @@ LaTeX Font Info:    ... okay on input line 54.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 54.
-LaTeX Info: Redefining \dots on input line 54.
-LaTeX Info: Redefining \up on input line 54.
+LaTeX Info: Redefining \degres on input line 55.
+LaTeX Info: Redefining \dots on input line 55.
+LaTeX Info: Redefining \up on input line 55.
 ("F:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen129
-\scratchbox=\box32
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen130
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count131
+\scratchdimen=\dimen142
+\scratchbox=\box33
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen143
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks32
 )
-\c@lstlisting=\count132
+\c@lstlisting=\count137
  (A:\Documents\conmet\github\compte-rendu\output\compte-rendu.toc)
 \tf@toc=\write3
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 64.
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (body/presentationProgAEv
+aluer.tex) [2
+
+] (body/premieresMesuresDuTempsExecution.tex) [3
+
+
+]
+(body/operationDominante.tex ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+LaTeX Font Info:    Try loading font information for T1+aett on input line 13.
 
 ("F:\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [2] (body/presentationProgAEvaluer.tex) [3
-
-] (body/premieresMesuresDuTempsExecution.tex
-<Black_cherry_tree_histogram.pdf, id=19, 216.81pt x 216.81pt>
-File: Black_cherry_tree_histogram.pdf Graphic file (type pdf)
-
-<use Black_cherry_tree_histogram.pdf>
-Package pdftex.def Info: Black_cherry_tree_histogram.pdf used on input line 15.
-
-(pdftex.def)             Requested size: 170.71652pt x 170.72554pt.
-) [4
-
-
- <./Black_cherry_tree_histogram.pdf>]
-(body/operationDominante.tex ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+)
+("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("F:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-)) [5
+) [4
 
 
-]
+]) [5]
 (body/analyseExperienceFournie.tex) [6
 
 
@@ -794,49 +827,48 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 [8
 
 
-] <diffMoy.pdf, id=90, 289.08pt x 325.215pt>
+] <diffMoy.pdf, id=38, 289.08pt x 325.215pt>
 File: diffMoy.pdf Graphic file (type pdf)
  <use diffMoy.pdf>
 Package pdftex.def Info: diffMoy.pdf used on input line 132.
 (pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
- [9] [10 <./diffMoy.pdf>] <x1-x2-1.pdf, id=103, 289.08pt x 325.215pt>
+ [9] [10 <./diffMoy.pdf>] <x1-x2-1.pdf, id=51, 289.08pt x 325.215pt>
 File: x1-x2-1.pdf Graphic file (type pdf)
  <use x1-x2-1.pdf>
-Package pdftex.def Info: x1-x2-1.pdf used on input line 176.
+Package pdftex.def Info: x1-x2-1.pdf used on input line 174.
 (pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
 
-<x1-x2-2.pdf, id=104, 289.08pt x 325.215pt>
+<x1-x2-2.pdf, id=52, 289.08pt x 325.215pt>
 File: x1-x2-2.pdf Graphic file (type pdf)
  <use x1-x2-2.pdf>
-Package pdftex.def Info: x1-x2-2.pdf used on input line 200.
+Package pdftex.def Info: x1-x2-2.pdf used on input line 198.
 (pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
 ) [11 <./x1-x2-1.pdf>] [12 <./x1-x2-2.pdf>]
 (A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8105 strings out of 493698
- 102288 string characters out of 3150051
- 464164 words of memory out of 3000000
- 11236 multiletter control sequences out of 15000+200000
+ 8328 strings out of 493698
+ 104878 string characters out of 3150051
+ 467818 words of memory out of 3000000
+ 11448 multiletter control sequences out of 15000+200000
  32432 words of font info for 73 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 35i,6n,53p,621b,1831s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,9n,53p,939b,1818s stack positions out of 5000i,500n,10000p,200000b,50000s
 <F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><F:/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx12.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmcsc10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><F:/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 Output written on A:/Documents/conmet/github/compte-rendu/output/compte-rendu.p
-df (12 pages, 302829 bytes).
+df (12 pages, 201338 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

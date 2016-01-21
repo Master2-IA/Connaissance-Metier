@@ -27,6 +27,8 @@ int nword = 0, linelen = 0, k;
 int m;
 clock_t startingTime, endingTime;
 
+int nbCall[3];
+
 /* word comparison */
 int wordncmp(char *p, char* q)
 {
@@ -42,6 +44,7 @@ int sortcmp(const void * p, const void * q)
 {
   char ** p1 = (char**) p;
   char ** q1 = (char**) q;
+  nbCall[2]++;
   return wordncmp(*p1, *q1);
 }
 
@@ -70,8 +73,13 @@ void writeword(char *s)
 
 int main(int argc, char* argv[])
 {
+for(int nb = 0; nb < 20; ++nb)
+{
   int i, wordsleft, lo, mid, up;
   char *phrase, *p;
+
+  for(i = 0; i < 3; i++)
+    nbCall[i] = 0;
 
   startingTime = clock();
 
@@ -82,7 +90,8 @@ int main(int argc, char* argv[])
   srand((unsigned) time(0));
 
   word[0] = inputchars;
-  while (scanf("%s", word[nword]) != EOF) {
+  while (scanf("%s", word[nword]) != EOF)
+  {
     /* if(nword <= 50) printf("%s:", word[nword]); */
     word[nword+1] = word[nword] + strlen(word[nword]) + 1;
     nword++;
@@ -92,32 +101,47 @@ int main(int argc, char* argv[])
   for (i = 0; i < k; i++)
     printf("%s\n", word[i]);
   qsort(word, nword, sizeof(word[0]), sortcmp);
+
   phrase = inputchars;
-  for ( ; wordsleft > 0; wordsleft--) {
+  for ( ; wordsleft > 0; wordsleft--)
+  {
     lo = -1;
     up = nword;
-    while (lo+1 != up) {
+    while (lo+1 != up)
+    {
       mid = (lo + up) / 2;
+      nbCall[0]++;
       if (wordncmp(word[mid], phrase) < 0)
         lo = mid;
       else
         up = mid;
     }
+
+// count3 = (nword / (2 + k) + 1) * m
+    nbCall[1]++;
     for (i = 0; wordncmp(phrase, word[up+i]) == 0; i++)
-      {
-        if (rand() % (i+1) == 0) p = word[up+i];
-      }
+    {
+      if (rand() % (i+1) == 0)
+        p = word[up+i];
+      nbCall[1]++;
+    }
+
     phrase = skip(p, 1);
     if (strlen(skip(phrase, k-1)) == 0)
       break;
+
     writeword(skip(phrase, k-1));
   }
+
   printf("\n");
 
   endingTime = clock();
 
+  fprintf(stderr, "%i %i %i %i\n", nbCall[0], nbCall[1], nbCall[2], nbCall[0] + nbCall[1] + nbCall[2]);
+}
 
   exit(EXIT_SUCCESS);
 }
+
 
 

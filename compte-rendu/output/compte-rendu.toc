@@ -1,23 +1,24 @@
 \select@language {french}
-\select@language {english}
-\select@language {french}
-\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation sommaire du programme \IeC {\`a} \IeC {\'e}valuer}{3}
-\contentsline {subsection}{\numberline {1.1}Donn\IeC {\'e}es \IeC {\`a} fournir en entr\IeC {\'e}e}{3}
-\contentsline {subsection}{\numberline {1.2}Donn\IeC {\'e}es fournies en sortie}{3}
-\contentsline {subsection}{\numberline {1.3}Algorithme}{3}
-\select@language {english}
-\select@language {french}
-\contentsline {section}{\numberline {2}Premi\IeC {\`e}res mesures du temps d'ex\IeC {\'e}cution}{4}
-\contentsline {subsection}{\numberline {2.1}Param\IeC {\`e}tres utilis\IeC {\'e}s dans toute cette section}{4}
-\contentsline {subsection}{\numberline {2.2}Mise en \IeC {\'e}vidence de la stochasticit\IeC {\'e} de l'algorithme}{4}
-\contentsline {subsection}{\numberline {2.3}Influence de la charge syst\IeC {\`e}me}{4}
-\contentsline {subsection}{\numberline {2.4}Influence des options de compilation}{4}
-\contentsline {section}{\numberline {3}Op\IeC {\'e}ration dominante}{5}
-\contentsline {subsection}{\numberline {3.1}Param\IeC {\`e}tres utilis\IeC {\'e}s dans toute cette section}{5}
-\contentsline {subsection}{\numberline {3.2}Identification de l'op\IeC {\'e}ration dominante}{5}
-\contentsline {subsection}{\numberline {3.3}Comptage des appels \IeC {\`a} l'op\IeC {\'e}ration dominante}{5}
+\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation sommaire du programme \IeC {\`a} \IeC {\'e}valuer}{2}
+\contentsline {subsection}{\numberline {1.1}Donn\IeC {\'e}es \IeC {\`a} fournir en entr\IeC {\'e}e}{2}
+\contentsline {subsection}{\numberline {1.2}Donn\IeC {\'e}es fournies en sortie}{2}
+\contentsline {subsection}{\numberline {1.3}Algorithme}{2}
+\contentsline {section}{\numberline {2}Premi\IeC {\`e}res mesures du temps d'ex\IeC {\'e}cution}{3}
+\contentsline {subsection}{\numberline {2.1}Param\IeC {\`e}tres utilis\IeC {\'e}s dans toute cette section}{3}
+\contentsline {subsection}{\numberline {2.2}Mise en \IeC {\'e}vidence de la stochasticit\IeC {\'e} de l'algorithme}{3}
+\contentsline {subsection}{\numberline {2.3}Influence de la charge syst\IeC {\`e}me}{3}
+\contentsline {subsection}{\numberline {2.4}Influence des options de compilation}{3}
+\contentsline {section}{\numberline {3}Op\IeC {\'e}ration dominante}{4}
+\contentsline {subsection}{\numberline {3.1}Param\IeC {\`e}tres utilis\IeC {\'e}s dans toute cette section}{4}
+\contentsline {subsection}{\numberline {3.2}Identification de l'op\IeC {\'e}ration dominante}{4}
+\contentsline {subsection}{\numberline {3.3}Comptage des appels \IeC {\`a} l'op\IeC {\'e}ration dominante}{4}
 \contentsline {section}{\numberline {4}Analyse de l'exp\IeC {\'e}rience fournie par R. Thion}{6}
 \contentsline {subsection}{\numberline {4.1}Plan d'exp\IeC {\'e}rience}{6}
+\contentsline {subsubsection}{\numberline {4.1.1}Variables mesur\IeC {\'e}es}{6}
+\contentsline {subsubsection}{\numberline {4.1.2}Param\IeC {\`e}tres}{6}
+\contentsline {subsubsection}{\numberline {4.1.3}Mode de combinaison des valeurs}{6}
+\contentsline {subsubsection}{\numberline {4.1.4}Nombre de runs}{6}
+\contentsline {subsubsection}{\numberline {4.1.5}Environnement de test}{6}
 \contentsline {subsection}{\numberline {4.2}Analyse des r\IeC {\'e}sultats}{6}
 \contentsline {section}{\numberline {5}Conception et r\IeC {\'e}alisation de votre exp\IeC {\'e}rience}{7}
 \contentsline {subsection}{\numberline {5.1}Plan d'exp\IeC {\'e}rience}{7}

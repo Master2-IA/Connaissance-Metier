@@ -86,21 +86,21 @@ On obtient une moyenne de 0,07.
 #   et pop2 comprise entre 0.2 et 1.2 
 
 tirerEchantillonPop1H1 <- function(n) {
-vraieMoyenne <- 0.5
-plageDeDispersion <- 1.0
-min <- vraieMoyenne - plageDeDispersion/2.0
-max <- vraieMoyenne + plageDeDispersion/2.0
-ech <- runif(n, min, max)
-return(ech)
+	vraieMoyenne <- 0.5
+	plageDeDispersion <- 1.0
+	min <- vraieMoyenne - plageDeDispersion/2.0
+	max <- vraieMoyenne + plageDeDispersion/2.0
+	ech <- runif(n, min, max)
+	return(ech)
 }
 
 tirerEchantillonPop2H1 <- function(n) {
-vraieMoyenne <- 0.7
-plageDeDispersion <- 1.0
-min <- vraieMoyenne - plageDeDispersion/2.0
-max <- vraieMoyenne + plageDeDispersion/2.0
-ech <- runif(n, min, max)
-return(ech)
+	vraieMoyenne <- 0.7
+	plageDeDispersion <- 1.0
+	min <- vraieMoyenne - plageDeDispersion/2.0
+	max <- vraieMoyenne + plageDeDispersion/2.0
+	ech <- runif(n, min, max)
+	return(ech)
 }
 
 
@@ -136,11 +136,9 @@ On obtient une moyenne de 0,2.
 \end{figure}
 
 
-Placons nous maintenant dans le cas ou l'on ait fait
-une seule experience.
+Placons nous maintenant dans le cas où l'on ait fait une seule experience.
 
-Ecrire le code pour evaluer la plausibilite de H0: "les deux 
-echantillons proviennent de deux populations qui ont la meme moyenne".
+% Ecrire le code pour evaluer la plausibilite de H0: "les deux echantillons proviennent de deux populations qui ont la meme moyenne".
 
 \begin{lstlisting}[language=R]
 cMean <- function(v1, v2)

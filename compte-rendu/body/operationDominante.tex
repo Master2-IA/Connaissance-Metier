@@ -4,14 +4,80 @@
 \subsection{Paramètres utilisés dans toute cette section}
 
 \subsection{Identification de l'opération dominante}
-Indiquez le ou les outils de profilage utilisés pour trouver l'opération dominante. Pour appuyer votre réponse, vous pouvez copier-coller un extrait du rapport de profilage, ou inclure une capture d'écran comme figure.
+% Indiquez le ou les outils de profilage utilisés pour trouver l'opération dominante. Pour appuyer votre réponse, vous pouvez copier-coller un extrait du rapport de profilage, ou inclure une capture d'écran comme figure.
+
+Pour déterminer l'opération dominante au sein du programme, nous avons utilisé gprof.
+
+% http://sourceware.org/binutils/docs/gprof/Implementation.html
+
+\begin{lstlisting}[language=bash]
+ $ gcc -pg -o markovPG markov.c
+ $ ./markovPG.exe 3 10000 < ./don-quixote.txt > outPG.txt
+ $ gprof markovPG.exe gmon.out > pg2.out
+\end{lstlisting}
+
+\begin{verbatim}
+%   cumulative   self              self     total           
+time   seconds   seconds    calls  ns/call  ns/call  name    
+53.57      0.15     0.15  7746432    19.36    19.36  wordncmp
+17.86      0.20     0.05                             sortcmp
+14.29      0.24     0.04                             __fentry__
+14.29      0.28     0.04                             _mcount_private
+0.00      0.28     0.00    30000     0.00     0.00  skip
+0.00      0.28     0.00    10000     0.00     0.00  writeword
+\end{verbatim}
+Nous pouvons voir que la fonction $wordncmp$ est la plus appellée avec 7746432 appels.
+
+
+
+
 
 \subsection{Comptage des appels à l'opération dominante}
-Indiquez ici les lignes de code que vous avez modifiées pour compter les appels à l'opération dominante.
+% Indiquez ici les lignes de code que vous avez modifiées pour compter les appels à l'opération dominante.
+
+Nous avons ajouté, de façon globale, un tableau de 3 cases de long int.
+Nous incrémentons ensuite à chaque appel la case du tableau correspondante.
+
 
 \begin{lstlisting}[language=C]
-/* A remplacer par les passages que vous avez modifies */
-int i = 0;
-float v = 5.9;
+/* [...] */
+up = nword;
+while(lo+1 != up)
+{
+	mid = (lo + up) / 2;
+	nbCall[0]++;
+	if(wordncmp(word[mid], phrase) < 0)
+		lo = mid;
+	else
+		up = mid;
+}
+/* [...] */
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+/* [...] */
+nbCall[1]++;
+for(i = 0; wordncmp(phrase, word[up+i]) == 0; i++)
+{
+	if(rand() % (i+1) == 0)
+		p = word[up+i];
+	nbCall[1]++;
+}
+/* [...] */
+\end{lstlisting}
+Il ne faut pas oublier de mettre une incrémentation avant ou après la boucle for car celle-ci va faire $x$ tours de boucle, impliquant d'avoir $x$ fois la condition qui vaut $vrai$ et $1$ fois qui vaut $faux$. Nous avons donc $x + 1$ appels à $wordncmp$.
+
+
+\begin{lstlisting}[language=C]
+/* [...] */
+/* called by system qsort */
+int sortcmp(const void* p, const void* q)
+{
+	char** p1 = (char**)p;
+	char** q1 = (char**)q;
+	nbCall[2]++;
+	return wordncmp(*p1, *q1);
+}
+/* [...] */
 \end{lstlisting}
 

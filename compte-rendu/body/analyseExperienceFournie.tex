@@ -1,18 +1,74 @@
 
 \section{Analyse de l'expérience fournie par R. Thion}
 
-Rappelez le ou les objectifs de cette expérience (voir la partie 4 du sujet de TP) : à quelle(s) question(s) va-t-on répondre ?
+% Rappelez le ou les objectifs de cette expérience (voir la partie 4 du sujet de TP) : à quelle(s) question(s) va-t-on répondre ?
 
 \subsection{Plan d'expérience}
-Rappelez ici le plan de l'expérience qui vous a été fournie :
-\begin{itemize}
-	\item Variables mesurées
-	\item Paramètres que l'on a fait varier, et les valeurs choisies (sans oublier les fichiers d'entrée).
-	\item Mode de combinaison des valeurs de paramètres (par exemple : full factorial design, si toutes les combinaisons possibles ont été testées)
-	\item Nombre de runs effectués pour chaque combinaison de valeurs de paramètre
-	\item Environnement de test
-\end{itemize}
+% Rappelez ici le plan de l'expérience qui vous a été fournie :
+% \begin{itemize}
+% 	\item Variables mesurées
+% 	\item Paramètres que l'on a fait varier, et les valeurs choisies (sans oublier les fichiers d'entrée).
+% 	\item Mode de combinaison des valeurs de paramètres (par exemple : full factorial design, si toutes les combinaisons possibles ont été testées)
+% 	\item Nombre de runs effectués pour chaque combinaison de valeurs de paramètre
+% 	\item Environnement de test
+% \end{itemize}
+
+\subsubsection{Variables mesurées}
+\subsubsection{Paramètres}
+20 tests par jeu de paramètre.
+m 100 1000000
+
+\begin{table}[h!]
+	\centering
+	\caption{.}
+	\label{tab:table1}
+	\begin{tabular}{c|ccc}
+		\toprule
+		Paramètre & Valeur min & Valeur max & Incrément\\
+		\midrule
+		m & 100 & 1000000 & $*10$\\
+		k & 2 & 7 & $+1$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\caption{Valeurs de $n$ choisies.}
+	\label{tab:table1}
+	\begin{tabular}{c|ccc}
+		\toprule
+		Fichier & Nombre de mots\\
+		\midrule
+		m & 100 & 1000000 & $*10$\\
+		k & 2 & 7 & $+1$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+\subsubsection{Mode de combinaison des valeurs}
+
+\subsubsection{Nombre de runs}
+4200
+\subsubsection{Environnement de test}
+\begin{table}[h!]
+	\centering
+	\caption{Informations sur la machine utilisée.}
+	\label{tab:table1}
+	\begin{tabular}{c|c}
+		\toprule
+		OS & 4.2.0-23-generic \#28-Ubuntu SMP x86\_64 GNU/Linux (Ubuntu 15.10)\\
+		Processeur & Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz (dual-core)\\
+		Memoire & 8GB 1600MHz DDR3L\\
+		Disque & 180GB M2 SATA-3 Solid State Drive\\
+		Compilateur & g++ (Ubuntu 5.2.1-22ubuntu2) 5.2.1 20151010\\
+		\bottomrule
+	\end{tabular}
+\end{table}
 
 \subsection{Analyse des résultats}
-Synthétisez les résultats obtenus à l'aide de trois figures maximum. Commentez-les et indiquez dans le texte principal les coefficients de détermination des régressions linéaires ($R^2$), les coefficients de corrélation et leurs p-values, etc.  Concluez sur les questions posées au début de cette section.
+% Synthétisez les résultats obtenus à l'aide de trois figures maximum. Commentez-les et indiquez dans le texte principal les coefficients de détermination des régressions linéaires ($R^2$), les coefficients de corrélation et leurs p-values, etc.  Concluez sur les questions posées au début de cette section.
 
+
+En regardant les résultats obtenus sur les jeux de paramètres identiques que les résultats obtenus sont les mêmes. Cela peut s'expliquer si les tests ont été réalisés avec une graine aléatoire ($srand(...)$) en seconde telle que $time(0)$. En effet, cette dernière fonction retourne le temps en seconde, ce qui fourni à $srand$ la même valeur tant que les tests sont réalisés la même seconde. Étant donné que l'exécution du programme a nécessité peu de temps et que ceux-ci ont été enchainés en moins d'une seconde, cela explique ce résultat. Par conséquent, il est préférable d'utiliser une graine qui dépend du nombre de cycles du processeur et non du temps lorsque l'on effectue de nombreux tests à la suite. Nous pouvons donc conclure qu'environ 210 résultats sur 4200 sont réellement intéressant, les autres étant des doublons.
