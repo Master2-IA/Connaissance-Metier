@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.13)  25 JAN 2016 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.13)  25 JAN 2016 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,6 +831,10 @@ e
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./body
 /presentationProgAEvaluer.tex)
 (./body/premieresMesuresDuTempsExecution.tex
+Underfull \hbox (badness 10000) in paragraph at lines 30--1
+
+ []
+
 <diagrams/time_m_10000_k_2.pdf, id=11, 289.08pt x 325.215pt>
 File: diagrams/time_m_10000_k_2.pdf Graphic file (type pdf)
 
@@ -973,7 +977,7 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on output/compte-rendu.pdf (17 pages, 265078 bytes).
+Output written on output/compte-rendu.pdf (17 pages, 265108 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
