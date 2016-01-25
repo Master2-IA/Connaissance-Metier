@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.14)  21 JAN 2016 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.14)  25 JAN 2016 09:11
 entering extended mode
 **compte-rendu.tex
 (compte-rendu.tex
@@ -706,14 +706,7 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("F:\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-(A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux
-
-LaTeX Warning: Label `tab:table1' multiply defined.
-
-
-LaTeX Warning: Label `tab:table1' multiply defined.
-
-)
+(A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
@@ -728,7 +721,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 55.
 LaTeX Font Info:    Try loading font information for OT2+cmr on input line 55.
- ("F:\MiKTeX 2.9\tex\latex\base\ot2cmr.fd"
+
+("F:\MiKTeX 2.9\tex\latex\base\ot2cmr.fd"
 File: ot2cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 55.
@@ -790,85 +784,153 @@ LaTeX Info: Redefining \up on input line 55.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (body/presentationProgAEv
-aluer.tex) [2
+aluer.tex) (body/premieresMesuresDuTempsExecution.tex
+<diagrams/time_m_10000_k_2.pdf, id=10, 289.08pt x 325.215pt>
+File: diagrams/time_m_10000_k_2.pdf Graphic file (type pdf)
 
-] (body/premieresMesuresDuTempsExecution.tex) [3
+<use diagrams/time_m_10000_k_2.pdf>
+Package pdftex.def Info: diagrams/time_m_10000_k_2.pdf used on input line 51.
+(pdftex.def)             Requested size: 170.71451pt x 170.72058pt.
+
+<diagrams/time_m_100000_k_2.pdf, id=11, 289.08pt x 325.215pt>
+File: diagrams/time_m_100000_k_2.pdf Graphic file (type pdf)
+
+<use diagrams/time_m_100000_k_2.pdf>
+Package pdftex.def Info: diagrams/time_m_100000_k_2.pdf used on input line 62.
+(pdftex.def)             Requested size: 170.71451pt x 170.72058pt.
+
+<diagrams/time_m_100000_k_2_n_39213.pdf, id=12, 289.08pt x 325.215pt>
+File: diagrams/time_m_100000_k_2_n_39213.pdf Graphic file (type pdf)
+
+<use diagrams/time_m_100000_k_2_n_39213.pdf>
+Package pdftex.def Info: diagrams/time_m_100000_k_2_n_39213.pdf used on input l
+ine 71.
+(pdftex.def)             Requested size: 170.71451pt x 170.72058pt.
 
 
-]
-(body/operationDominante.tex ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:timeStochasticite' on page 2 undefined on input l
+ine 104.
+
+[2] [3 <./diagrams/time_m_10000_k_2.pdf>] [4 <./diagrams/time_m_100000_k_2.pdf>
+ <./diagrams/time_m_100000_k_2_n_39213.pdf>]
+<diagrams/time_serial_paral.pdf, id=43, 614.295pt x 794.97pt>
+File: diagrams/time_serial_paral.pdf Graphic file (type pdf)
+
+<use diagrams/time_serial_paral.pdf>
+Package pdftex.def Info: diagrams/time_serial_paral.pdf used on input line 108.
+
+(pdftex.def)             Requested size: 170.71727pt x 170.709pt.
+File: diagrams/time_serial_paral.pdf Graphic file (type pdf)
+ <use diagrams/time_serial_paral.pdf>
+Package pdftex.def Info: diagrams/time_serial_paral.pdf used on input line 150.
+
+(pdftex.def)             Requested size: 341.43454pt x 341.44228pt.
+
+<diagrams/time_optimisation.pdf, id=44, 614.295pt x 794.97pt>
+File: diagrams/time_optimisation.pdf Graphic file (type pdf)
+
+<use diagrams/time_optimisation.pdf>
+Package pdftex.def Info: diagrams/time_optimisation.pdf used on input line 173.
+
+(pdftex.def)             Requested size: 341.43454pt x 341.44228pt.
+ [5 <./diagrams/time_serial_paral.pdf>]
+[6]
+Overfull \hbox (145.6089pt too wide) in paragraph at lines 184--187
+[]$\OML/cmm/m/it/10.95 moyenne\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 tempsDebu
+g\OT1/cmr/m/n/10.95 ) = 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 00981731$ $\OM
+L/cmm/m/it/10.95 moyenne\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 tempsRelease\OT
+1/cmr/m/n/10.95 ) = 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 006638$ $\OML/cmm/
+m/it/10.95 moyenne\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 tempsRelease\OT1/cmr/
+m/n/10.95 )\OML/cmm/m/it/10.95 =moyenne\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
+tempsDebug\OT1/cmr/m/n/10.95 ) =$
+ []
+
+) (body/operationDominante.tex ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+) ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-LaTeX Font Info:    Try loading font information for T1+aett on input line 13.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 18.
 
 ("F:\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+) [7 <./diagrams/time_optimisation.pdf>] ("F:\MiKTeX 2.9\tex\latex\listings\lst
+lang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("F:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-) [4
+))
+(body/analyseExperienceFournie.tex [8]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-]) [5]
-(body/analyseExperienceFournie.tex) [6
+[9]
+Overfull \hbox (7.03586pt too wide) in paragraph at lines 138--143
+[]\T1/aer/m/n/10.95 Coefficients de cor-ré-la-tion : count1 count2 count3 n 9.9
+96839e-01 0.308325932 0.1605025 k 1.356917e-
+ []
 
+) (body/conceptionRealisationExperience.tex [10] [11]
+Overfull \hbox (9.47781pt too wide) in paragraph at lines 155--160
+[]\T1/aer/m/n/10.95 Coefficients de cor-ré-la-tion : count1 count2 count3 n 0.4
+8010732 9.995515e-01 0.27090054 k 0.02803182
+ []
 
-]
-(body/conceptionRealisationExperience.tex) [7
-
-
-] (body/annexeCodeTuto.tex
-[8
-
-
-] <diffMoy.pdf, id=38, 289.08pt x 325.215pt>
-File: diffMoy.pdf Graphic file (type pdf)
- <use diffMoy.pdf>
-Package pdftex.def Info: diffMoy.pdf used on input line 132.
-(pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
- [9] [10 <./diffMoy.pdf>] <x1-x2-1.pdf, id=51, 289.08pt x 325.215pt>
-File: x1-x2-1.pdf Graphic file (type pdf)
- <use x1-x2-1.pdf>
-Package pdftex.def Info: x1-x2-1.pdf used on input line 174.
+) (body/annexeCodeTuto.tex [12] [13]
+<diagrams/diffMoy.pdf, id=88, 289.08pt x 325.215pt>
+File: diagrams/diffMoy.pdf Graphic file (type pdf)
+ <use diagrams/diffMoy.pdf>
+Package pdftex.def Info: diagrams/diffMoy.pdf used on input line 132.
 (pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
 
-<x1-x2-2.pdf, id=52, 289.08pt x 325.215pt>
-File: x1-x2-2.pdf Graphic file (type pdf)
- <use x1-x2-2.pdf>
-Package pdftex.def Info: x1-x2-2.pdf used on input line 198.
-(pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
-) [11 <./x1-x2-1.pdf>] [12 <./x1-x2-2.pdf>]
-(A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux)
+[14] [15 <./diagrams/diffMoy.pdf>]
+<diagrams/x1-x2-1.pdf, id=101, 289.08pt x 325.215pt>
+File: diagrams/x1-x2-1.pdf Graphic file (type pdf)
 
-LaTeX Warning: There were multiply-defined labels.
+<use diagrams/x1-x2-1.pdf>
+Package pdftex.def Info: diagrams/x1-x2-1.pdf used on input line 174.
+(pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
+
+<diagrams/x1-x2-2.pdf, id=102, 289.08pt x 325.215pt>
+File: diagrams/x1-x2-2.pdf Graphic file (type pdf)
+
+<use diagrams/x1-x2-2.pdf>
+Package pdftex.def Info: diagrams/x1-x2-2.pdf used on input line 197.
+(pdftex.def)             Requested size: 341.43306pt x 384.13248pt.
+) [16 <./diagrams/x1-x2-1.pdf>] [17 <./diagrams/x1-x2-2.pdf>] (A:\Documents\con
+met\github\compte-rendu\output\compte-rendu.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8328 strings out of 493698
- 104878 string characters out of 3150051
- 467818 words of memory out of 3000000
- 11448 multiletter control sequences out of 15000+200000
+ 8401 strings out of 493698
+ 106324 string characters out of 3150051
+ 462593 words of memory out of 3000000
+ 11515 multiletter control sequences out of 15000+200000
  32432 words of font info for 73 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 35i,9n,53p,939b,1818s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,9n,51p,952b,2322s stack positions out of 5000i,500n,10000p,200000b,50000s
 <F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><F:/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx12.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmcsc10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmtt10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmtt8.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><F:/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 Output written on A:/Documents/conmet/github/compte-rendu/output/compte-rendu.p
-df (12 pages, 201338 bytes).
+df (17 pages, 280912 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

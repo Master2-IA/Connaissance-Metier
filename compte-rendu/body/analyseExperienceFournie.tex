@@ -2,6 +2,7 @@
 \section{Analyse de l'expérience fournie par R. Thion}
 
 % Rappelez le ou les objectifs de cette expérience (voir la partie 4 du sujet de TP) : à quelle(s) question(s) va-t-on répondre ?
+Nous souhaitons tester l'influence de $n$, $m$ et $k$ sur les valeurs de $count1$, $count2$ et $count3$.
 
 \subsection{Plan d'expérience}
 % Rappelez ici le plan de l'expérience qui vous a été fournie :
@@ -14,14 +15,34 @@
 % \end{itemize}
 
 \subsubsection{Variables mesurées}
-\subsubsection{Paramètres}
-20 tests par jeu de paramètre.
-m 100 1000000
+
+Les variables mesurées sont les suivantes :
 
 \begin{table}[h!]
 	\centering
-	\caption{.}
-	\label{tab:table1}
+	\caption{Variables mesurées.}
+	\label{tab:variablesMesureesFournie}
+	\begin{tabular}{c|c}
+		\toprule
+		Variable & Description\\
+		\midrule
+		count1 & Nombre d'appels à la méthode $wordncmp$.\\
+		count2 & Nombre d'appels à la méthode $wordncmp$.\\
+		count3 & Nombre d'appels à la méthode $wordncmp$.\\
+		usr & Temps approximatif utilisé par le programme en lui même.\\
+		sys & Temps approximatif utilisé par le système d'exploitation.\\
+		time & Temps approximatif entre le début et la fin de l'exécution du programme.\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Paramètres}
+Il a été réalisé 20 tests par jeu de paramètre.
+
+\begin{table}[h!]
+	\centering
+	\caption{Paramètres numériques.}
+	\label{tab:parametresNumeriquesFournie}
 	\begin{tabular}{c|ccc}
 		\toprule
 		Paramètre & Valeur min & Valeur max & Incrément\\
@@ -35,27 +56,34 @@ m 100 1000000
 \begin{table}[h!]
 	\centering
 	\caption{Valeurs de $n$ choisies.}
-	\label{tab:table1}
+	\label{tab:valeursDeNChoisiesFournie}
 	\begin{tabular}{c|ccc}
 		\toprule
 		Fichier & Nombre de mots\\
 		\midrule
-		m & 100 & 1000000 & $*10$\\
-		k & 2 & 7 & $+1$\\
+		book1\_assommoir.txt & 91033\\
+		book2\_sherlock.txt & 104410\\
+		book3\_wonderland.txt & 26438\\
+		book4\_don-quixote\_400k.txt & 404461\\
+		book4\_don-quixote\_40k.txt & 40171\\
+		book4\_don-quixote\_4k.txt & 4030\\
+		book5\_allbooks.txt & 626342\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
 
 \subsubsection{Mode de combinaison des valeurs}
+Les tests ont été effectués à partir de plages de paramètres. Toutes les valeurs possibles n'ont pas été utilisées étant donné que certaines valeurs (par exemple : de grandes valeurs de $k$) ne sont plus adaptées à une utilisation cohérente du programme. C'est à dire que l'utilisation de tels paramètres donnerait un résultat d'exploitation (et non en terme de temps, etc...) indésiré dans une utilisation normale du programme.
 
 \subsubsection{Nombre de runs}
 4200
+
 \subsubsection{Environnement de test}
 \begin{table}[h!]
 	\centering
 	\caption{Informations sur la machine utilisée.}
-	\label{tab:table1}
+	\label{tab:environnementFournie}
 	\begin{tabular}{c|c}
 		\toprule
 		OS & 4.2.0-23-generic \#28-Ubuntu SMP x86\_64 GNU/Linux (Ubuntu 15.10)\\
@@ -70,5 +98,50 @@ m 100 1000000
 \subsection{Analyse des résultats}
 % Synthétisez les résultats obtenus à l'aide de trois figures maximum. Commentez-les et indiquez dans le texte principal les coefficients de détermination des régressions linéaires ($R^2$), les coefficients de corrélation et leurs p-values, etc.  Concluez sur les questions posées au début de cette section.
 
+Count1 ~ n + k + m
+\begin{verbatim}
+              Estimate Std. Error  t value Pr(>|t|)    
+              (Intercept) -1.756e+05  4.624e+03  -37.980   <2e-16 ***
+              n            1.811e+01  7.032e-03 2575.692   <2e-16 ***
+              k            3.159e+00  9.036e+02    0.003    0.997    
+              m            9.230e-16  3.950e-03    0.000    1.000   
+\end{verbatim}
+Nous pouvons voir que seul n est fortement lié à count1.
+$R^2$ de $count1$ ~ $n$ : 0.9994
 
-En regardant les résultats obtenus sur les jeux de paramètres identiques que les résultats obtenus sont les mêmes. Cela peut s'expliquer si les tests ont été réalisés avec une graine aléatoire ($srand(...)$) en seconde telle que $time(0)$. En effet, cette dernière fonction retourne le temps en seconde, ce qui fourni à $srand$ la même valeur tant que les tests sont réalisés la même seconde. Étant donné que l'exécution du programme a nécessité peu de temps et que ceux-ci ont été enchainés en moins d'une seconde, cela explique ce résultat. Par conséquent, il est préférable d'utiliser une graine qui dépend du nombre de cycles du processeur et non du temps lorsque l'on effectue de nombreux tests à la suite. Nous pouvons donc conclure qu'environ 210 résultats sur 4200 sont réellement intéressant, les autres étant des doublons.
+Count2 ~ n + k + m
+\begin{verbatim}
+              Estimate Std. Error t value Pr(>|t|)    
+              (Intercept) -3.487e+05  8.466e+04  -4.119 3.88e-05 ***
+              n            2.988e+00  1.287e-01  23.207  < 2e-16 ***
+              k           -2.293e+03  1.654e+04  -0.139     0.89    
+              m            2.206e+00  7.231e-02  30.505  < 2e-16 ***
+\end{verbatim}
+Nous pouvons voir que seul n et m sont fortement liés à count2.
+$R^2$ de $count2$ ~ $n$ : 0.09485
+$R^2$ de $count2$ ~ $m$ : 0.1641
+
+Count3 ~ n + k + m
+\begin{verbatim}
+              Estimate Std. Error t value Pr(>|t|)    
+              (Intercept)  1.134e+06  2.007e+05   5.652 1.69e-08 ***
+              n            3.291e+00  3.051e-01  10.785  < 2e-16 ***
+              k           -3.658e+05  3.921e+04  -9.328  < 2e-16 ***
+              m            1.848e+00  1.714e-01  10.780  < 2e-16 ***
+\end{verbatim}
+Nous pouvons voir que n, k et m sont étroitement liés à count3.
+$R^2$ de $count3$ ~ $n$ : 0.02553 
+$R^2$ de $count3$ ~ $k$ : 0.01904 
+$R^2$ de $count3$ ~ $m$ : 0.0255
+
+
+Coefficients de corrélation :
+\begin{verbatim}
+count1       count2     count3
+n 9.996839e-01  0.308325932  0.1605025
+k 1.356917e-06 -0.001841625 -0.1388157
+m 1.115266e-19  0.405293749  0.1604183
+\end{verbatim}
+
+
+En regardant les résultats obtenus sur les jeux de paramètres identiques, on peut constater que les résultats obtenus sont les mêmes. Cela peut s'expliquer si les tests ont été réalisés avec une graine aléatoire ($srand(...)$) en seconde telle que $time(NULL)$. En effet, cette dernière fonction retourne le temps en seconde, ce qui fourni à $srand$ la même valeur tant que les tests sont réalisés la même seconde. Étant donné que l'exécution du programme a nécessité peu de temps et que ceux-ci ont été enchainés en moins d'une seconde, cela explique ce résultat. Par conséquent, il est préférable d'utiliser une graine qui dépend du nombre de cycles du processeur et non du temps lorsque l'on effectue de nombreux tests à la suite. Nous pouvons donc conclure qu'environ 210 résultats sur 4200 sont réellement intéressant, les autres étant des doublons.

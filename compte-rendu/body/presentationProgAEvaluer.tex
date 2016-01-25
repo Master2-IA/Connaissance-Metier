@@ -3,32 +3,75 @@
 
 \subsection{Données à fournir en entrée}
 
+On fourni en entrée un fichier texte venant d'un roman.
+Ce fichier d'entrée ne doit pas avoir de numéro de page ou d'éléments qui ne sont pas liés au texte lui même.
+
 \subsection{Données fournies en sortie}
+
+En sortie, nous obtenons un texte composé de $m$ mots (si possible) issus du texte d'entrée.
+Le résultat donne une texte qui donne l'illusion d'avoir été rédigé par une personne.
+Cette illusion va être plus ou moins efficace en fonction du paramètre $k$.
+Une valeur trop grande du paramètre $k$ va donner un texte identique au texte originel.
 
 \subsection{Algorithme}
 
 % Décrivez en français ce que vous avez compris de l'algorithme. Expliquez entre autres ce que représentent $n$, $m$, et $k$, et en quoi l'algorithme est stochastique. Vous pouvez en plus écrire l'algorithme sous forme de pseudocode (bonus). Voir  \url{https://en.wikibooks.org/wiki/LaTeX/Algorithms#Typesetting_using_the_algorithmic_package} pour plus d'informations.
 
+L'algorithme découpe le texte d'entrée en mots et les tri.
+Jusqu'à ce qu'il n'y ait plus de mots disponibles ou jusqu'à ce qu'il ait atteint le nombre de mots de sortie désiré, l'algorithme va successivement trouver l'index du mot anciennement utilisé, puis il sélectionne un nouveau mot à partir de cet index, et pour terminer, il écrit ce mot dans la sortie désirée.
+
+
 
 \begin{itemize}
 	\item $n$ représente le nombre de mots mesurés dans le fichier d'entrée.
 	\item $m$ représente le nombre de mots que l'on souhaite avoir en sortie.
-	\item $k$ représente le nombre de mots à passer $+ 1$ dans le texte d'entrée.
+	\item $k$ représente le nombre de mots par phrase.
 \end{itemize}
 
-
+L'algorithme est stochastique dans sa sélection des mots. Néanmoins, sa stochasticité peut être annulée par l'utilisation d'une mauvaise graine pour l'initialisation de la fonction d'aléatoire (srand).
 
 \begin{algorithm}
-	\caption{<your caption for this algorithm>}
-	\label{<your label for references later in your document>}
+	\caption{Algorithme du générateur de texte.}
+	\label{algoGeneTexte}
 	\begin{algorithmic}
-		% A remplacer par votre pseudocode
-		\If {$i\geq maxval$}
-		\State $i\gets 0$
-		\Else
-		\If {$i+k\leq maxval$}
-		\State $i\gets i+k$
-		\EndIf
-		\EndIf
+		\State $nword\gets splitInputIntoWords(word)$ \Comment {Decouper le fichier d'entrée en mots}
+		\State $sort(word)$
+		
+		\State $phrase\gets inputchars$
+		\State $wordsleft\gets m$
+		
+		\For {$wordsleft > 0$} \Comment {Jusqu'à ce que l'on ait tous les mots que nous voulions.}
+			
+			\Comment {Dichotomie pour trouver l'index du mot qui correspond le mieux à $phrase$.}
+			\State $lo\gets -1$ \Comment {Debut du tableau de mots d'entrée.}
+			\State $up\gets nword$ \Comment {Fin du tableau de mots d'entrée.}
+			\While {$lo + 1 \neq up$}
+				\State $mid\gets (lo + up) / 2$ \Comment {mid = mediane entre $lo$ et $up$.}
+				\If {$isSmallerThan(word[mid], phrase)$}
+					\State $lo\gets mid$
+				\Else
+					\State $up\gets mid$
+				\EndIf
+			\EndWhile
+			
+			
+			\State $i\gets 0$
+			\For {$phrase = word[up + i]$}
+				\If {!(rand() \% (i + 1))} \Comment {Se produit de moins en moins souvent au fur et à mesure que la valeur de i augmente.}
+					\State $p\gets word[up + i]$
+				\EndIf
+				\State $i\gets i + 1$
+			\EndFor
+			
+			\State $phrase\gets skip(p, 1)$ \Comment {Sélectionne le mot choisi aléatoirement.}
+			\If {isEmptyString(skip(phrase, k-1))} \Comment {Si nous avons atteint la fin du fichier.}
+				\State $break$ \Comment {Quitte la boucle.}
+			\EndIf
+				
+			\State $writeOutputWord(skip(phrase, k-1))$
+			
+			\State $wordleft\gets wordleft - 1$ \Comment {Décompte le nombre restant de mots à ajouter au texte final.}
+		\EndFor
+		
 	\end{algorithmic}
 \end{algorithm}

@@ -1,6 +1,7 @@
 
 \section{Conception et réalisation de votre expérience}
 % Indiquez ici le ou les objectifs de votre propre expérience (voir la partie 4 du sujet de TP, éventuellement enrichie de vos propres questions additionnelles).
+Nous souhaitons tester l'influence de $n$, $m$ et $k$ sur les valeurs de $count1$, $count2$ et $count3$.
 
 \subsection{Plan d'expérience}
 % Décrivez ici votre plan d'expérience :
@@ -14,5 +15,150 @@
 
 % Si vous avez utilisé un outil de type ``cahier de laboratoire'' (papier ou numérique), indiquez-le ici, en incluant une figure (scan ou copie d'écran).
 
+Pour réaliser les expériences et éviter le problème présenté dans l'analyse des résultats de l'expérience fournie vis à vis de l'initialisation de l'algorithme de génération de nombres aléatoires, nous avons utilisé une fonction de la librairie $windows.h$ qui retournera une valeur différente à chaque appel.
+
+\begin{lstlisting}[language=C]
+#include <windows.h>
+
+/* [...] */
+
+unsigned __int64 rndSeed;
+QueryPerformanceCounter((LARGE_INTEGER *)&rndSeed);
+srand(rndSeed);
+
+/* [...] */
+\end{lstlisting}
+
+
+\subsubsection{Variables mesurées}
+
+Les variables mesurées sont les suivantes :
+
+\begin{table}[h!]
+	\centering
+	\caption{Variables mesurées.}
+	\label{tab:variablesMesureesExperience}
+	\begin{tabular}{c|c}
+		\toprule
+		Variable & Description\\
+		\midrule
+		count1 & Nombre d'appels à la méthode $wordncmp$.\\
+		count2 & Nombre d'appels à la méthode $wordncmp$.\\
+		count3 & Nombre d'appels à la méthode $wordncmp$.\\
+		usr & Temps approximatif utilisé par le programme en lui même.\\
+		sys & Temps approximatif utilisé par le système d'exploitation.\\
+		time & Temps approximatif entre le début et la fin de l'exécution du programme.\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Paramètres}
+Il a été réalisé 10 tests par jeu de paramètre.
+
+\begin{table}[h!]
+	\centering
+	\caption{Paramètres numériques.}
+	\label{tab:parametresNumeriquesRealisee}
+	\begin{tabular}{c|ccc}
+		\toprule
+		Paramètre & Valeur min & Valeur max & Incrément\\
+		\midrule
+		m & 100 & 1000000 & $*10$\\
+		k & 2 & 7 & $+1$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\caption{Valeurs de $n$ choisies.}
+	\label{tab:valeursDeNChoisiesRealisee}
+	\begin{tabular}{c|ccc}
+		\toprule
+		Fichier & Nombre de mots\\
+		\midrule
+		Le catéchumène & 6640\\
+		Zig ou la destinée & 26046\\
+		Venus Boy & 39213\\
+		Battlefields of the Marne & 75166\\
+		Madame Bovary & 112451\\
+		Don Quixote & 404461\\
+		Histoire des salons de Paris & 492732\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+\subsubsection{Mode de combinaison des valeurs}
+Les tests ont été effectués à partir de plages de paramètres. Toutes les valeurs possibles n'ont pas été utilisées étant donné que certaines valeurs (par exemple : de grandes valeurs de $k$) ne sont plus adaptées à une utilisation cohérente du programme. C'est à dire que l'utilisation de tels paramètres donnerait un résultat d'exploitation (et non en terme de temps, etc...) indésiré dans une utilisation normale du programme.
+
+\subsubsection{Nombre de runs}
+Nous avons réalisé 2100 runs.
+
+\subsubsection{Environnement de test}
+\begin{table}[h!]
+	\centering
+	\caption{Informations sur la machine utilisée.}
+	\label{tab:environnementExperience}
+	\begin{tabular}{c|c}
+		\toprule
+		OS & Microsoft Windows 10 Professionnel 10.0.10240\\
+		Processeur & Intel(R) Core(TM) i7-4702MQ CPU @ 2.20GHz 4 coeurs 8 processeurs logiques\\
+		Memoire & 7.66GB DDR3\\
+		Disque & 1TB HDD Toshiba MQ01ABD100\\
+		Compilateur & gcc 4.8.1 (Windows 10)\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
 \subsection{Analyse des résultats}
 % Synthétisez les résultats obtenus à l'aide de trois figures maximum, et commentez-les. Les relations obtenues correspondent-elles à ce qu'on attend étant donné l'algorithme ? Quelle est l'influence de chaque paramètre ? Obtenez-vous les mêmes résultats qu'avec l'expérience fournie ?
+
+
+Count1 ~ n + k + m
+\begin{verbatim}
+Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -6.856e+05  2.629e+05  -2.608  0.00917 ** 
+n            1.209e+01  4.757e-01  25.421  < 2e-16 ***
+k            7.583e+04  5.109e+04   1.484  0.13789    
+m            1.718e-02  2.233e-03   7.694 2.18e-14 ***
+\end{verbatim}
+Nous pouvons voir que seul n est fortement lié à count1.
+$R^2$ de $count1$ ~ $n$ : 0.2301
+
+Count2 ~ n + k + m
+\begin{verbatim}
+Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -2.753e+05  7.855e+03  -35.05   <2e-16 ***
+n            2.247e+01  1.422e-02 1580.88   <2e-16 ***
+k            1.853e+04  1.527e+03   12.14   <2e-16 ***
+m            4.283e-17  6.673e-05    0.00        1    
+\end{verbatim}
+Nous pouvons voir que seul n et k sont fortement liés à count2.
+$R^2$ de $count2$ ~ $n$ : 0.9991
+$R^2$ de $count2$ ~ $k$ : -0.0004177
+
+Count3 ~ n + k + m
+\begin{verbatim}
+Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.356e+06  3.457e+05   9.708  < 2e-16 ***
+n            8.389e+00  6.256e-01  13.409  < 2e-16 ***
+k           -8.403e+05  6.719e+04 -12.506  < 2e-16 ***
+m            1.241e-02  2.937e-03   4.225 2.49e-05 ***
+\end{verbatim}
+Nous pouvons voir que n et k sont étroitement liés à count3.
+$R^2$ de $count3$ ~ $n$ : 0.07295
+$R^2$ de $count3$ ~ $k$ : 0.06339
+
+
+Coefficients de corrélation :
+\begin{verbatim}
+count1        count2      count3
+n 0.48010732  9.995515e-01  0.27090054
+k 0.02803182  7.675098e-03 -0.25266565
+m 0.14530334 -2.633931e-20  0.08536216
+\end{verbatim}
+
+
+Nous n'obtenons pas les mêmes résultats que l'expérience fournie. Cela peut venir de la stochasticité du programme, du problème d'initialisation de l'algorithme aléatoire pour l'expérience fournie ou/et des fichiers utilisés qui peuvent avoir des caractéristiques particulières.

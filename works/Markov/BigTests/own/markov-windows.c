@@ -92,7 +92,7 @@ WORD getCPUTime( )
 int main(int argc, char* argv[])
 {	int i, wordsleft, lo, mid, up;
 	char *phrase, *p;
-	unsigned __int64 startTime, endTime;
+	LARGE_INTEGER startTime, endTime;
 	
 	for(i = 0; i < 3; i++)
 		nbCall[i] = 0;
@@ -112,11 +112,11 @@ QueryPerformanceCounter((LARGE_INTEGER *)&startTime);
 	k = atoi(argv[1]);
 	m = atoi(argv[2]);
 	wordsleft = m;
-	/*
+	
   unsigned __int64 ttt;
 QueryPerformanceCounter((LARGE_INTEGER *)&ttt);
-  srand(ttt);*/
-        srand((unsigned) time(0));  
+  srand(ttt);
+        //srand((unsigned) time(0));  
 	
 	word[0] = inputchars;
 	while (scanf("%s", word[nword]) != EOF) {
@@ -156,16 +156,13 @@ QueryPerformanceCounter((LARGE_INTEGER *)&ttt);
         //printf("\n");
 QueryPerformanceCounter((LARGE_INTEGER *)&endTime);
         //endTime = getCPUTime( );
+		
+		LARGE_INTEGER freq;
+		QueryPerformanceFrequency((LARGE_INTEGER *)&freq);
 
         //fprintf( stderr, "CPU time used = %lf\n", (endTime - startTime) );
-  fprintf(stdout, "%i;", k);
-  fprintf(stdout, "%i;", m);
-  fprintf(stdout, "%i;", nword);
-  fprintf(stdout, "%lu;", nbCall[2]);
-  fprintf(stdout, "%lu;", nbCall[0]);
-  fprintf(stdout, "%lu;", nbCall[1]);
-  fprintf(stdout, "%lu\n", endTime - startTime);
-  fprintf(stderr, " [%lu %lu]\n", endTime, startTime);
+  fprintf(stdout, "%i;%i;%i;%lu;%lu;%lu;%f\n", k, m, nword, nbCall[2], nbCall[0], nbCall[1], (endTime.QuadPart - startTime.QuadPart) / (double)freq.QuadPart);
+  //fprintf(stderr, " [%lu %lu]\n", endTime, startTime);
 	exit(EXIT_SUCCESS);
 }
 

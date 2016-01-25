@@ -1,4 +1,4 @@
-data1 <- read.table("markov_bench_books.csv", h=T, sep=";")
+data1 <- read.table("out_TRUE_RND_BIG.csv", h=T, sep=";")
 
 
 
@@ -47,9 +47,21 @@ abline(lm(count1 ~ m))
 # ... mais qu'il depend fortement de la taille du fichier d'entree (n)
 ########################################################################
 
-plot(n, count1, pch=3, xlab="n", ylab="count1 (tri des prefixes)",  cex.lab=0.9, cex.axis=0.8, cex=0.8)
+plot(k, count2, pch=3, xlab="n", ylab="count1 (tri des prefixes)",  cex.lab=0.9, cex.axis=0.8, cex=0.8)
 # Faire le fit lineaire de count1 en fonction de n
 summary(lm(count1 ~ n))
+summary(lm(count1 ~ k))
+summary(lm(count1 ~ m))
+summary(lm(count2 ~ n))
+summary(lm(count2 ~ k))
+summary(lm(count2 ~ m))
+summary(lm(count3 ~ n))
+summary(lm(count3 ~ k))
+summary(lm(count3 ~ m))
+as.data.frame(list("count1"=c("n"=cor(count1, n), "k"=cor(count1, k), "m"=cor(count1, m)),
+     "count2"=c("n"=cor(count2, n), "k"=cor(count2, k), "m"=cor(count2, m)),
+     "count3"=c("n"=cor(count3, n), "k"=cor(count3, k), "m"=cor(count3, m)))
+)
 # Quel R^2 obtenez-vous ?
 # R^2 = 0.9994 environ égal à 1
 # Ajoutez la droite de regression sur le graphique.
@@ -167,6 +179,7 @@ dev.off()
 ###################################################################
 
 cputime <- usr + sys
+cputime <- time
 
 # Faites le graphique du temps CPU en fonction de count1.
 plot(cputime, count1, pch=3, xlab="cputime", ylab="count1 (tri des prefixes)",  cex.lab=0.9, cex.axis=0.8, cex=0.8)
@@ -200,7 +213,118 @@ cor(cputime, count2)
 cor(cputime, count3)
 cor.test(cputime, count2)
 
+plot(data1$time)
+subset(data1, m==10000)$time
 
+pdf("time_m_10000_k_2.pdf", w=4, h=4.5)
+plot(subset(data1, m==10000 & k==2)$time, ylab="time (ms)")
+dev.off()
+
+pdf("time_m_100000_k_2.pdf", w=4, h=4.5)
+plot(subset(data1, m==100000 & k==2)$time, ylab="time (ms)")
+dev.off()
+
+pdf("time_m_100000_k_2_n_39213.pdf", w=4, h=4.5)
+plot(subset(data1, m==100000 & k==2 & n==39213)$time, ylab="time (ms)")
+dev.off()
+
+pdf("time_m_100000_n_39213.pdf", w=4, h=4.5)
+plot(subset(data1, m==10000 & n==39213)$time, ylab="time (ms)")
+dev.off()
+
+# Ecart-type
+sd(subset(data1, m==100000 & k==2 & n==39213)$time)
+sd(subset(data1, m==100000 & k==7 & n==39213)$time)
+
+d <- subset(data1, m==100000 & n==39213)
+ds <- split(d$time, d$k)
+ds
+ds$`2`
+dsl <- as.data.frame(list('2'=ds$`2`,
+                   '3'=ds$`3`,
+                   '4'=ds$`4`,
+                   '5'=ds$`5`,
+                   '6'=ds$`6`,
+                   '7'=ds$`7`))
+dsl <- as.data.frame(list(c('2'=ds$`2`), ds$`3`, ds$`4`))
+dsl
+sd(dsl)
+
+
+
+data2 <- read.table("outTimeSerial_Tick.csv", h=T, sep=";")
+data2 <- data2[order(data2$k, data2$n),]
+attach(data2)
+
+data3 <- read.table("outTimeParal_Tick.csv", h=T, sep=";")
+data3 <- data3[order(data3$k, data3$n),]
+attach(data3)
+
+plot(data2$time, ylab="time")
+plot(data3$time, ylab="time")
+
+plot(data2$time, ylab="time", col="black")
+points(data3$time, col="red")
+abline(h=mean(data2$time), col="black")
+abline(h=mean(data3$time), col="red")
+
+sd(data2$time)
+sd(data3$time)
+
+mean(data2$time)
+mean(data3$time)
+max(data2$time)
+max(data3$time)
+min(data2$time)
+min(data3$time)
+median(data2$time)
+median(data3$time)
+
+var(list(data2$time, data3$time))
+plot()
+
+
+
+dataO0 <- read.table("outSerialO0.csv", h=T, sep=";")
+dataO0 <- dataO0[order(dataO0$k, dataO0$n),]
+attach(dataO0)
+
+dataO1 <- read.table("outSerialO1.csv", h=T, sep=";")
+dataO1 <- dataO0[order(dataO1$k, dataO1$n),]
+attach(dataO1)
+
+dataO2 <- read.table("outSerialO2.csv", h=T, sep=";")
+dataO2 <- dataO2[order(dataO2$k, dataO2$n),]
+attach(dataO2)
+
+dataO3 <- read.table("outSerialO3.csv", h=T, sep=";")
+dataO3 <- dataO3[order(dataO3$k, dataO3$n),]
+attach(dataO3)
+
+plot(dataO0$time, col="black", ylab="time")
+points(dataO3$time, col="red")
+abline(h=mean(dataO0$time), col="black")
+abline(h=mean(dataO1$time), col="blue")
+abline(h=mean(dataO2$time), col="orange")
+abline(h=mean(dataO3$time), col="red")
+mean(dataO0$time)
+mean(dataO3$time)
+mean(dataO3$time) / mean(dataO0$time)
+
+
+dataST <- read.table("outSerialStochTest.csv", h=T, sep=";")
+dataST <- dataST[order(dataST$k, dataST$n),]
+attach(dataST)
+
+dataSTR <- read.table("outSerialStochTestRnd.csv", h=T, sep=";")
+dataSTR <- dataSTR[order(dataSTR$k, dataSTR$n),]
+attach(dataSTR)
+
+
+plot(dataSTR$time, col="black", ylab="time")
+points(dataST$time, col="red")
+abline(h=mean(dataSTR$time), col="black")
+abline(h=mean(dataST$time), col="red")
 
 #######
 # Fin
