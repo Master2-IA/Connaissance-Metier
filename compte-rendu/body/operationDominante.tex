@@ -3,10 +3,7 @@
 
 \subsection{Paramètres utilisés dans toute cette section}
 
-Pour cette section, les paramètres utilisés sont les suivants :
-k 3
-m 10000
-fichier don-quixote.txt
+Pour cette section, les paramètres utilisés sont les suivants : k = 3, m = 10000 et, comme fichier, Don Quixiote (404461 mots).
 
 \subsection{Identification de l'opération dominante}
 % Indiquez le ou les outils de profilage utilisés pour trouver l'opération dominante. Pour appuyer votre réponse, vous pouvez copier-coller un extrait du rapport de profilage, ou inclure une capture d'écran comme figure.
@@ -31,7 +28,7 @@ time   seconds   seconds    calls  ns/call  ns/call  name
 0.00      0.28     0.00    30000     0.00     0.00  skip
 0.00      0.28     0.00    10000     0.00     0.00  writeword
 \end{verbatim}
-Nous pouvons voir que la fonction $wordncmp$ est la plus appelée avec 7746432 appels.
+Nous pouvons voir que la fonction $wordncmp$ est la plus appelée, avec un total de 7746432 appels.
 
 
 
@@ -40,8 +37,8 @@ Nous pouvons voir que la fonction $wordncmp$ est la plus appelée avec 7746432 a
 \subsection{Comptage des appels à l'opération dominante}
 % Indiquez ici les lignes de code que vous avez modifiées pour compter les appels à l'opération dominante.
 
-Nous avons ajouté, de façon globale, un tableau de 3 cases de long int.
-Nous incrémentons ensuite à chaque appel la case du tableau correspondante.
+Nous avons ajouté, de façon globale, un tableau de 3 cases contenant des long int.
+Nous incrémentons ensuite, à chaque appel, la case du tableau correspondante.
 
 
 \begin{lstlisting}[language=C]

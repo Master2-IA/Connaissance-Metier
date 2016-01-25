@@ -1,6 +1,51 @@
 
 \section{Annexe : Code réalisé pour le tutoriel sur les tests d'hypothèse}
-
+\begin{algorithm}[H]
+	\caption{Algorithme du générateur de texte.}
+	\label{algoGeneTexte}
+	\begin{algorithmic}
+		\State $nword\gets splitInputIntoWords(word)$ \Comment {Découper le fichier d'entrée en mots}
+		\State $sort(word)$
+		
+		\State $phrase\gets inputchars$
+		\State $wordsleft\gets m$
+		
+		\For {$wordsleft > 0$} \Comment {Jusqu'à ce que l'on ait tous les mots que nous voulions.}
+		
+		\Comment {Dichotomie pour trouver l'index du mot qui correspond le mieux à $phrase$.}
+		\State $lo\gets -1$ \Comment {Début du tableau de mots d'entrée.}
+		\State $up\gets nword$ \Comment {Fin du tableau de mots d'entrée.}
+		\While {$lo + 1 \neq up$}
+		\State $mid\gets (lo + up) / 2$ \Comment {mid = médiane entre $lo$ et $up$.}
+		\If {$isSmallerThan(word[mid], phrase)$}
+		\State $lo\gets mid$
+		\Else
+		\State $up\gets mid$
+		\EndIf
+		\EndWhile
+		
+		
+		\State $i\gets 0$
+		\For {$phrase = word[up + i]$}
+		\If {!(rand() \% (i + 1))} \Comment {Se produit de moins en moins souvent au fur et à mesure que la valeur de i augmente.}
+		\State $p\gets word[up + i]$
+		\EndIf
+		\State $i\gets i + 1$
+		\EndFor
+		
+		\State $phrase\gets skip(p, 1)$ \Comment {Sélectionne le mot choisi aléatoirement.}
+		\If {isEmptyString(skip(phrase, k-1))} \Comment {Si nous avons atteint la fin du fichier.}
+		\State $break$ \Comment {Quitte la boucle.}
+		\EndIf
+		
+		\State $writeOutputWord(skip(phrase, k-1))$
+		
+		\State $wordleft\gets wordleft - 1$ \Comment {Décompte le nombre restant de mots à ajouter au texte final.}
+		\EndFor
+		
+	\end{algorithmic}
+\end{algorithm}
+\newpage
 \begin{lstlisting}[language=R]
 #######################
 # Cas ou H0 est vraie 
@@ -71,8 +116,8 @@ abline(h=mean(diffMoyH0), col="red")
 
 \end{lstlisting}
 
-On obtient une moyenne de 0,07.
-
+Nous obtenons une moyenne de 0,07.
+\newpage
 \begin{lstlisting}[language=R]
 
 #######################
@@ -124,19 +169,19 @@ abline(h=mean(diffMoyH1), col="red")
 
 \end{lstlisting}
 
-On obtient une moyenne de 0,2.
+Nous obtenons une moyenne de 0,2.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
 		% remplacez par votre figure 
-		\includegraphics[width=12cm]{diagrams/diffMoy.pdf}
-		\caption{Graphique représentant diffMoyH0 et diffMoyH1 ainsi que leur moyenne.}
+		\includegraphics[width=10cm]{diagrams/diffMoy.pdf}
+		\caption{Graphique représentant diffMoyH0 et diffMoyH1 ainsi que leur moyenne}
 		\label{fig:diffMoy}
 	\end{center}
 \end{figure}
 
 
-Placons nous maintenant dans le cas où l'on ait fait une seule experience.
+Plaçons nous maintenant dans le cas où l'on ait fait une seule expériencee.
 
 % Ecrire le code pour evaluer la plausibilite de H0: "les deux echantillons proviennent de deux populations qui ont la meme moyenne".
 
@@ -168,11 +213,11 @@ sameMean(x1, x2)
 
 Ici, sameMean(x1, x2) retourne "TRUE", ce qui signifie que les deux échantillons ont une moyenne proche l'une de l'autre.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
 		% remplacez par votre figure 
-		\includegraphics[width=12cm]{diagrams/x1-x2-1.pdf}
-		\caption{Graphique représentant x1 and x2 ainsi que leur moyenne.}
+		\includegraphics[width=7cm]{diagrams/x1-x2-1.pdf}
+		\caption{Graphique représentant x1 and x2 ainsi que leur moyenne}
 		\label{fig:x1-x2-1}
 	\end{center}
 \end{figure}
@@ -192,13 +237,13 @@ sameMean(x1, x2)
 
 Ici, sameMean(x1, x2) retourne "FALSE", ce qui signifie que les deux échantillons ont une moyenne bien différente l'une de l'autre.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{diagrams/x1-x2-2.pdf}
-		\caption{Graphique représentant x1 and x2 ainsi que leur moyenne.}
+		\includegraphics[width=7cm]{diagrams/x1-x2-2.pdf}
+		\caption{Graphique représentant x1 and x2 ainsi que leur moyenne}
 		\label{fig:x1-x2-2}
 	\end{center}
 \end{figure}
 
 
-Incorporez également les histogrammes obtenus sous forme de figures. Indiquez vos conclusions sur les deux paires d'échantillons. 
+%Incorporez également les histogrammes obtenus sous forme de figures. Indiquez vos conclusions sur les deux paires d'échantillons. 

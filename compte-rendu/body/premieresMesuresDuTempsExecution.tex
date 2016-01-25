@@ -10,13 +10,13 @@
 
 \subsubsection{Paramètres}
 
-Étant donné que les tests n'ont pas été réalisés avec les mêmes paramètres à chaque fois, ceux-ci sont indiqués lorsqu'ils sont utilisés.
+Étant donné que les tests n'ont pas été réalisés avec les mêmes paramètres à chaque fois, ceux-ci seront indiqués.
 
 
 \subsubsection{Environnement de travail}
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
-	\caption{Informations sur la machine utilisée.}
+	\caption{Informations sur la machine utilisée}
 	\label{tab:environnementTravail}
 	\begin{tabular}{c|c}
 		\toprule
@@ -47,41 +47,41 @@
 
 % ** MONTRER VARIABILITE -> Histogramme
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=6cm,height=6cm]{diagrams/time_m_10000_k_2.pdf}
-		\caption{.}
+		\includegraphics[height=8cm]{diagrams/time_m_10000_k_2.pdf}
+		\caption{Mesure du temps CPU - m = 10000, k = 2}
 		\label{fig:timeM10000K2}
 	\end{center}
 \end{figure}
 Nous pouvons voir sur la figure \ref{fig:timeM10000K2} différents paliers représentant les différents fichiers d'entrée.
-Chaque temps mesuré d'un palier (donc d'un fichier) est une execution identique les unes par rapport aux autres.
+Chaque temps mesuré d'un palier (donc d'un fichier) est une exécution identique les unes par rapport aux autres.
 Nous voyons donc qu'au sein d'un même palier, les temps varient, représentant la stochasticité de l'algorithme.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=6cm,height=6cm]{diagrams/time_m_100000_k_2.pdf}
-		\caption{.}
+		\includegraphics[height=8cm]{diagrams/time_m_100000_k_2.pdf}
+		\caption{Mesure du temps CPU - m = 100000, k = 2}
 		\label{fig:timeM100000K2}
 	\end{center}
 \end{figure}
-Sur la figure \ref{fig:timeM100000K2}, nous pouvons voir une stochasticité plus importante, surement dû à une valeur de m 10 fois plus grande.
+Sur la figure \ref{fig:timeM100000K2}, nous pouvons voir une stochasticité plus importante, sûrement dû à une valeur de m 10 fois plus grande.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=6cm,height=6cm]{diagrams/time_m_100000_k_2_n_39213.pdf}
-		\caption{.}
+		\includegraphics[height=7cm]{diagrams/time_m_100000_k_2_n_39213.pdf}
+		\caption{Mesure du temps CPU - m = 100000, k = 2, n = 39213}
 		\label{fig:timeM100000K2n39213}
 	\end{center}
 \end{figure}
-La figure \ref{fig:timeM100000K2n39213} montre la stochasticité de l'algorithme sur un seul palier. C'est à dire que tous les points représentent le temps d'execution avec des paramètres identiques.
+La figure \ref{fig:timeM100000K2n39213} montre la stochasticité de l'algorithme sur un seul palier. Ceci veut dire que tous les points représentent le temps d'exécution avec des paramètres identiques.
 
 % ** ECART-TYPE
 
 
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
-	\caption{Valeurs de $n$ choisies.}
+	\caption{Valeurs de $n$ choisies}
 	\label{tab:ecartTypesTemps}
 	\begin{tabular}{ccc|c}
 		\toprule
@@ -97,17 +97,17 @@ La figure \ref{fig:timeM100000K2n39213} montre la stochasticité de l'algorithme
 
 % ** NB RUNS
 Ces tests ont été réalisés en 10 runs.
-
+\newline
 
 
 % Puis décrivez la manipulation que vous avez effectuée pour montrer qu'une grande part de cette variabilité provient de la stochasticité de l'algorithme. 
 
-Nous avons appliqué à $srand$ une valeur fixe (ici, 0), ainsi, à chaque execution de mêmes paramètres, les résultats seront très proches les uns des autres. Cela peut être clairement vu sur la figure \ref{fig:timeStochasticite}, avec, en noir, 100 exécutions avec une graine qui change, et en rouge, 100 exécutions avec une graine constante.
+Nous avons appliqué à $srand$ une valeur fixe (ici, 0). Ainsi, à chaque exécution de mêmes paramètres, les résultats seront très proches les uns des autres. Cela peut être clairement vu sur la figure \ref{fig:timeStochasticite}, avec, en noir, 100 exécutions avec une graine qui change, et en rouge, 100 exécutions avec une graine constante :
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=6cm,height=6cm]{diagrams/time_serial_paral.pdf}
-		\caption{.}
+		\includegraphics[height=7.6cm]{diagrams/time_serial_paral.pdf}
+		\caption{Temps CPU - srand fixe}
 		\label{fig:timeStochasticite}
 	\end{center}
 \end{figure}
@@ -119,25 +119,23 @@ Nous avons appliqué à $srand$ une valeur fixe (ici, 0), ainsi, à chaque execu
 Le temps CPU est influencé par la charge système car si celui-ci est très demandé par d'autres processus, alors il y a plus de chance pour que le processeur soit coupé entre deux mesures de temps pour donner la main à un autre processus.
 
 % ** DECRIRE EXPERIENCE
-Pour observer ce phenomène, il suffit de lancer les tests en série et des les comparer aux mêmes tests lancés en parallèle.
-Etant donné que le système va devoir passer d'un processus à l'autre, nous observerons donc des différences.
+Pour observer ce phénomène, il suffit de lancer les tests en série et de les comparer aux mêmes tests lancés en parallèle.
+Étant donné que le système va devoir passer d'un processus à l'autre, nous observerons donc des différences.
 
 % ** DONNER RESULTATS CHIFFRéS
-100 tests chacun.
+100 tests ont été faits, avec comme paramètres k=3, m=100000 et, comme fichier, Le catéchumène (6640 mots).
 
-Paramètres : k=3 ; m=100000; fichier=6640.txt
+Pour pouvoir observer en grande précision, les tests ont été faits en mesurant non pas le temps, mais un compteur incrémenté par le système (qui représente le temps lorsqu'il est divisé par la fréquence du processeur), ce qui a été fait pour être facilement analysable par des êtres humains.
 
-Pour pouvoir observer en grande précision, les tests ont été fait en mesurant non pas le temps, mais un compteur incrémenté par le système (qui représente le temps lorsqu'il est divisé par la fréquence du processeur), ce qui a été fait pour être facilement analysable par des humains.
-
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
-	\caption{Résultats.}
+	\caption{Résultats}
 	\label{tab:resultatTemps}
 	\begin{tabular}{c|cc}
 		\toprule
 		& Série & Parallèle\\
 		\midrule
-		Ecart-type & 0.005357606 & 0.02199298\\
+		Écart-type & 0.005357606 & 0.02199298\\
 		Minimum & 0.004862 & 0.007019\\
 		Maximum & 0.031609 & 0.097435\\
 		Moyenne & 0.00938539 & 0.0249153\\
@@ -146,10 +144,10 @@ Pour pouvoir observer en grande précision, les tests ont été fait en mesurant
 	\end{tabular}
 \end{table}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm,height=12cm]{diagrams/time_serial_paral.pdf}
-		\caption{.}
+		\includegraphics[height=12cm]{diagrams/time_serial_paral.pdf}
+		\caption{Temps d'exécution en parallèle}
 		\label{fig:timeSerialParal}
 	\end{center}
 \end{figure}
@@ -169,10 +167,10 @@ Les lignes représentent les moyennes.
 % orange = O2
 % red = O3
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm,height=12cm]{diagrams/time_optimisation.pdf}
-		\caption{.}
+		\includegraphics[height=12cm]{diagrams/time_optimisation.pdf}
+		\caption{Temps d'exécution en fonction de l'optimisation}
 		\label{fig:timeOptimisation}
 	\end{center}
 \end{figure}
@@ -183,11 +181,13 @@ Nous pouvons constater sur la figure \ref{fig:timeOptimisation} que si l'optimis
 % ** % d'amélioration
 % ** FORMULE
 $moyenne(tempsDebug) = 0.00981731$
+\par
 $moyenne(tempsRelease) = 0.006638$
-$moyenne(tempsRelease) / moyenne(tempsDebug) = 0.6761526$ => Amélioration de 67.61526 \%.
+\par
+$moyenne(tempsRelease) / moyenne(tempsDebug) = 0.6761526$
+\par => Amélioration de 67.61526 \%
 
 % ** NB RUNS, ...
-100 runs pour chaque paramètre d'optimisation.
-Paramètres : k=3 ; m=100000; fichier=6640.txt
-Optimisations : 0, 1, 2, 3
+Il y a eu 100 runs pour chaque paramètre d'optimisation, avec pour paramètres k=3, m=100000 et, comme fichier, Le catéchumène (6640 mots).
+Les optimisations sont : 0, 1, 2, 3
 
