@@ -1,14 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.13)  26 JAN 2016 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.14)  26 JAN 2016 09:36
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **compte-rendu.tex
-(./compte-rendu.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+(compte-rendu.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("F:\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+("F:\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,19 +21,19 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+("F:\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+("F:\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.dfu
+("F:\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -185,7 +183,7 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
+("F:\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -216,7 +214,7 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
+("F:\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -240,33 +238,31 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/aeguill/aeguill.sty
+("F:\MiKTeX 2.9\tex\latex\aeguill\aeguill.sty"
 Package: aeguill 2003/08/02 1.02 AE fonts with french guillemets (D. Roegel)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/ae.sty
+("F:\MiKTeX 2.9\tex\latex\ae\ae.sty"
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+ ("F:\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+ ("F:\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
-LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aer.fd
+("F:\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+("F:\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/cyrillic/ot2enc.def
+("F:\MiKTeX 2.9\tex\latex\cyrillic\ot2enc.def"
 File: ot2enc.def 2001/08/11 v3.3a Cyrillic encoding definition file
 Now handling font encoding OT2 ...
 ... processing UTF-8 mapping file for font encoding OT2
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot2enc.dfu
+("F:\MiKTeX 2.9\tex\latex\base\ot2enc.dfu"
 File: ot2enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -407,26 +403,26 @@ File: ot2enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+201D (decimal 8221)
    defining Unicode char U+2116 (decimal 8470)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+("F:\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+("F:\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+("F:\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("F:\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("F:\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("F:\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -441,28 +437,29 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
+
+("F:\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("F:\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+("F:\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+("F:\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+("F:\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen111
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("F:\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen112
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+("F:\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
@@ -503,13 +500,19 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+("F:\MiKTeX 2.9\tex\latex\babel\babel.sty"
 Package: babel 2014/09/25 3.9l The Babel package
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+("F:\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("F:\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+("F:\MiKTeX 2.9\tex\latex\babel\babel.def"
 File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count102
 \U@D=\dimen120
@@ -518,8 +521,8 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-french/frenchb.ldf
-Language: frenchb 2015/04/10 v3.1e French support from the babel system
+("F:\MiKTeX 2.9\tex\latex\babel-french\frenchb.ldf"
+Language: frenchb 2014/10/25 v3.1c French support from the babel system
 \l@acadian = a dialect from \language\l@french 
 \l@canadien = a dialect from \language\l@french 
 \FBcolonskip=\skip46
@@ -539,16 +542,16 @@ Package babel Info: Making ? an active character on input line 374.
 \leftmarginFB=\skip51
 \parindentFFN=\dimen122
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+("F:\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
+("F:\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithms/algorithm.sty
+("F:\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+("F:\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count107
 \float@exts=\toks23
@@ -556,16 +559,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box29
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+("F:\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks25
 \c@algorithm=\count108
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+("F:\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+("F:\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -581,21 +584,21 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip54
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+) ("F:\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+("F:\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("F:\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("F:\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("F:\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count116
@@ -610,7 +613,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+("F:\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count117
 \lst@gtempboxa=\box30
 \lst@token=\toks26
@@ -624,39 +627,39 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \lst@lineno=\count122
 \lst@maxwidth=\dimen126
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+("F:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count123
 \lst@skipnumbers=\count124
 \lst@framebox=\box31
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+("F:\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+("F:\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+("F:\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+("F:\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("F:\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/frankenstein/newclude.sty
+("F:\MiKTeX 2.9\tex\latex\frankenstein\newclude.sty"
 Package: newclude 1999/11/02 v2 A new system for including files (Frankenstein'
 s backbone)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/frankenstein/moredefs.sty
+("F:\MiKTeX 2.9\tex\latex\frankenstein\moredefs.sty"
 Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
 
 \sc@toks@a=\toks27
@@ -665,8 +668,8 @@ Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
 \nc@toks@a=\toks29
 \c@IncludeDepth=\count125
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/frankenstein/tag.sto)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+("F:\MiKTeX 2.9\tex\latex\frankenstein\tag.sto")
+("F:\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen129
 \lightrulewidth=\dimen130
@@ -686,7 +689,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count129
 \@thisrulewidth=\dimen141
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
+("F:\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \c@r@tfl@t=\count130
 \rotFPtop=\skip55
@@ -694,18 +697,16 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \rot@float@box=\box32
 \rot@mess@toks=\toks30
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang2.sty
+("F:\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2014/09/06 1.5e listings language file
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang3.sty
+("F:\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
-(output/compte-rendu.aux)
-\openout1 = `compte-rendu.aux'.
-
+(A:\Documents\conmet\github\compte-rendu\output\compte-rendu.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
@@ -721,8 +722,8 @@ LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 56.
 LaTeX Font Info:    Try loading font information for OT2+cmr on input line 56.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
-File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
+("F:\MiKTeX 2.9\tex\latex\base\ot2cmr.fd"
+File: ot2cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 56.
 
@@ -763,7 +764,7 @@ LaTeX Font Info:    ... okay on input line 56.
 LaTeX Info: Redefining \degres on input line 56.
 LaTeX Info: Redefining \dots on input line 56.
 LaTeX Info: Redefining \up on input line 56.
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+("F:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count131
 \scratchdimen=\dimen142
@@ -778,78 +779,31 @@ LaTeX Info: Redefining \up on input line 56.
 \everyMPtoPDFconversion=\toks32
 )
 \c@lstlisting=\count137
- (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-(output/compte-rendu.toc)
+ (A:\Documents\conmet\github\compte-rendu\output\compte-rendu.toc)
 \tf@toc=\write3
-\openout3 = `compte-rendu.toc'.
-
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./body
-/presentationProgAEvaluer.tex)
-(./body/premieresMesuresDuTempsExecution.tex
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (body/presentationProgAEv
+aluer.tex) (body/premieresMesuresDuTempsExecution.tex
 Underfull \hbox (badness 10000) in paragraph at lines 30--1
 
  []
 
-<diagrams/time_m_10000_k_2.pdf, id=11, 289.08pt x 325.215pt>
+<diagrams/time_m_10000_k_2.pdf, id=10, 289.08pt x 325.215pt>
 File: diagrams/time_m_10000_k_2.pdf Graphic file (type pdf)
 
 <use diagrams/time_m_10000_k_2.pdf>
 Package pdftex.def Info: diagrams/time_m_10000_k_2.pdf used on input line 52.
 (pdftex.def)             Requested size: 202.33696pt x 227.62204pt.
  [2]
-<diagrams/time_m_100000_k_2.pdf, id=17, 289.08pt x 325.215pt>
+<diagrams/time_m_100000_k_2.pdf, id=16, 289.08pt x 325.215pt>
 File: diagrams/time_m_100000_k_2.pdf Graphic file (type pdf)
 
 <use diagrams/time_m_100000_k_2.pdf>
 Package pdftex.def Info: diagrams/time_m_100000_k_2.pdf used on input line 63.
 (pdftex.def)             Requested size: 202.33696pt x 227.62204pt.
 
-<diagrams/time_m_100000_k_2_n_39213.pdf, id=18, 289.08pt x 325.215pt>
+<diagrams/time_m_100000_k_2_n_39213.pdf, id=17, 289.08pt x 325.215pt>
 File: diagrams/time_m_100000_k_2_n_39213.pdf Graphic file (type pdf)
 
 <use diagrams/time_m_100000_k_2_n_39213.pdf>
@@ -861,7 +815,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
-<diagrams/time_serial_paral.pdf, id=34, 614.295pt x 794.97pt>
+<diagrams/time_serial_paral.pdf, id=33, 614.295pt x 794.97pt>
 File: diagrams/time_serial_paral.pdf Graphic file (type pdf)
 
 <use diagrams/time_serial_paral.pdf>
@@ -874,34 +828,35 @@ File: diagrams/time_serial_paral.pdf Graphic file (type pdf)
  <use diagrams/time_serial_paral.pdf>
 Package pdftex.def Info: diagrams/time_serial_paral.pdf used on input line 149.
 
-(pdftex.def)             Requested size: 263.84175pt x 341.43306pt.
+(pdftex.def)             Requested size: 219.86188pt x 284.52756pt.
 
-[5] <diagrams/time_optimisation.pdf, id=52, 614.295pt x 794.97pt>
+<diagrams/time_optimisation.pdf, id=48, 614.295pt x 794.97pt>
 File: diagrams/time_optimisation.pdf Graphic file (type pdf)
 
 <use diagrams/time_optimisation.pdf>
 Package pdftex.def Info: diagrams/time_optimisation.pdf used on input line 172.
 
 (pdftex.def)             Requested size: 263.84175pt x 341.43306pt.
-) (./body/operationDominante.tex
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+ [5]) (body/operationDominante.tex [6 <./diagrams/time_optimisation.pdf>] ("F:\
+MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+) ("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 LaTeX Font Info:    Try loading font information for T1+aett on input line 15.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aett.fd
+("F:\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [6 <./diagrams/time_optimisation.pdf>]
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+)
+("F:\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+("F:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ))
-(./body/analyseExperienceFournie.tex [7] [8]
+(body/analyseExperienceFournie.tex [7
+
+] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
@@ -916,7 +871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--136
 
  []
 
-) (./body/conceptionRealisationExperience.tex [9]
+) (body/conceptionRealisationExperience.tex [9]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -935,52 +890,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
-) [12] (./body/annexeCodeTuto.tex [13] [14]
-<diagrams/diffMoy.pdf, id=92, 289.08pt x 325.215pt>
+) [12] (body/annexeCodeTuto.tex [13] [14]
+<diagrams/diffMoy.pdf, id=91, 289.08pt x 325.215pt>
 File: diagrams/diffMoy.pdf Graphic file (type pdf)
  <use diagrams/diffMoy.pdf>
 Package pdftex.def Info: diagrams/diffMoy.pdf used on input line 177.
 (pdftex.def)             Requested size: 284.52756pt x 320.10791pt.
 
-[15] <diagrams/x1-x2-1.pdf, id=96, 289.08pt x 325.215pt>
+[15] <diagrams/x1-x2-1.pdf, id=95, 289.08pt x 325.215pt>
 File: diagrams/x1-x2-1.pdf Graphic file (type pdf)
 
 <use diagrams/x1-x2-1.pdf>
 Package pdftex.def Info: diagrams/x1-x2-1.pdf used on input line 219.
 (pdftex.def)             Requested size: 199.16928pt x 224.0661pt.
  [16 <./diagrams/diffMoy.pdf>]
-<diagrams/x1-x2-2.pdf, id=106, 289.08pt x 325.215pt>
+<diagrams/x1-x2-2.pdf, id=105, 289.08pt x 325.215pt>
 File: diagrams/x1-x2-2.pdf Graphic file (type pdf)
 
 <use diagrams/x1-x2-2.pdf>
 Package pdftex.def Info: diagrams/x1-x2-2.pdf used on input line 242.
 (pdftex.def)             Requested size: 199.16928pt x 224.0661pt.
-) [17 <./diagrams/x1-x2-1.pdf> <./diagrams/x1-x2-2.pdf>] (output/compte-rendu.a
-ux) ) 
+) [17 <./diagrams/x1-x2-1.pdf> <./diagrams/x1-x2-2.pdf>] (A:\Documents\conmet\g
+ithub\compte-rendu\output\compte-rendu.aux) ) 
 Here is how much of TeX's memory you used:
- 8743 strings out of 493089
- 115763 string characters out of 6134842
- 458959 words of memory out of 5000000
- 11992 multiletter control sequences out of 15000+600000
- 32432 words of font info for 73 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,9n,51p,961b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on output/compte-rendu.pdf (17 pages, 264887 bytes).
+ 8397 strings out of 493698
+ 106270 string characters out of 3150051
+ 448950 words of memory out of 3000000
+ 11511 multiletter control sequences out of 15000+200000
+ 32432 words of font info for 73 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 35i,9n,51p,961b,1818s stack positions out of 5000i,500n,10000p,200000b,50000s
+<F:/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><F:/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><F:/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><F:/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmtt8.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt9.pfb>
+Output written on A:/Documents/conmet/github/compte-rendu/output/compte-rendu.p
+df (17 pages, 282127 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
